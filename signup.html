@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="login page.css" type="text/css">
+    <style>
+        div{
+    background-color: white;
+    /* margin: 10% 25% 40px 25%; */
+    height: 450px;
+    width: 450px;
+    padding-top: 40px;
+}
+body{
+    background-color: rgb(218, 224, 224);
+}
+input{
+    padding-top: 30px;
+    height: 12px;
+    width: 250px;
+    font-size: large;
+    border-color: black;
+    color: #000;
+}
+button{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    color: blanchedalmond;
+    background-color: black;
+}
+h1{
+    color: #000;
+    padding-bottom: 30px;
+}
+a{
+    color: blanchedalmond;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+            <h1>Sign up</h1>
+            <form action="/signup" method="post">
+                <label for="username"><input type="text" name="name" id="username" placeholder="enter your username" maxlength="25" minlength="5"></label><br><br>
+            <label for="email"><input type="text" name="email" id="email" placeholder="enter your email" pattern="{0-9}{a-z}" required minlength="8" maxlength="30"></label><br><br>
+            <label for="password"><input type="password" name="password" id="password" placeholder="enter your password" pattern="{a-z}" required minlength="6" maxlength="20" title="at least 5 characters"></label>
+            <br>
+            <button type="submit" id="sub"><a >Sign up</a></button><br><br><br> 
+            <button type="reset" id="reset">reset</button>
+    </form>
+    <br><br>
+    <a href="login.ejs">LogIn</a>
+</div>
+<!-- <p id="test1">{{cred.name}} is open to being {{cred.career}}.</p> -->
+   </center>
+</body>
+</html>
